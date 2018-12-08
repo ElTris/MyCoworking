@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
     android:gravity="center_horizontal"
-    android:layout_gravity="center"
-    tools:context=".MainActivityRegistro">
-
+    tools:context=".MainActivityEvento">
 
     <ScrollView
         android:layout_gravity="center_horizontal"
@@ -26,7 +25,7 @@
                 android:layout_margin="20dp"
                 android:textSize="20dp"
                 android:fontFamily="@font/letra3"
-                android:text="REGISTRO"
+                android:text="Crear evento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -37,33 +36,16 @@
                 android:layout_width="250dp"
                 android:layout_height="150dp" />
 
-            <TextView
-                android:layout_margin="20dp"
-                android:layout_gravity="left"
-                android:fontFamily="@font/letra3"
-                android:textSize="18dp"
-                android:text="Seleccionar imagen de perfi:"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:id="@+id/agregarPhoto"
-                android:background="@drawable/btnplus"
-                android:text="+"
-                android:textColor="@color/white"
-                android:textSize="40dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp" />
-
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
                     android:layout_margin="10dp"
-                    android:id="@+id/NombreUSR"
+                    android:id="@+id/nombreEvento"
                     android:layout_width="match_parent"
                     android:fontFamily="@font/letra3"
                     android:layout_height="wrap_content"
-                    android:hint="Nombre de Usuario"
+                    android:hint="Nombre de Evento"
                     android:textAlignment="center"
                     android:maxLength="10"
                     android:maxLines="1"
@@ -79,51 +61,95 @@
                     android:layout_width="match_parent"
                     android:fontFamily="@font/letra3"
                     android:layout_height="100dp"
-                    android:hint="Descripción de Usuario"
+                    android:hint="Descripción de Evento"
                     android:textAlignment="center"
                     android:maxLength="10"
                     android:maxLines="3"
                     android:inputType="textAutoComplete"/>
             </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:fontFamily="@font/letra3"
+                android:text="Fecha de realización de evento:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CalendarView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </CalendarView>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
                     android:layout_margin="10dp"
-                    android:id="@+id/correo"
+                    android:id="@+id/Horario"
                     android:layout_width="match_parent"
                     android:fontFamily="@font/letra3"
                     android:layout_height="wrap_content"
-                    android:hint="Correo electrónico"
+                    android:hint="Ingrese cantidad de horas"
                     android:textAlignment="center"
                     android:maxLength="10"
-                    android:maxLines="3"
-                    android:inputType="textEmailAddress"/>
-            </android.support.design.widget.TextInputLayout>
-
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <EditText
-                    android:layout_margin="10dp"
-                    android:id="@+id/password"
-                    android:layout_width="match_parent"
-                    android:fontFamily="@font/letra3"
-                    android:layout_height="wrap_content"
-                    android:hint="Ingrese contraseña"
-                    android:textAlignment="center"
-                    android:maxLength="10"
-                    android:maxLines="3"
+                    android:maxLines="1"
                     android:inputType="textPassword"/>
             </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_margin="10dp"
+                    android:id="@+id/asistentes"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/letra3"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese número de asistentes max."
+                    android:textAlignment="center"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_gravity="left"
+                android:fontFamily="@font/letra3"
+                android:textSize="18dp"
+                android:text="Seleccionar imagen de evento:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/agregarPhotoEvento"
+                android:background="@drawable/btnplus"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/letra3"
+                android:text="Agregar Lugar:"
+                android:textSize="18dp" />
+            <Spinner
+                android:id="@+id/lugares"
+                android:layout_width="250dp"
+                android:layout_height="70dp">
+
+            </Spinner>
 
             <Button
                 android:id="@+id/btnRegistrarmeUsr"
                 android:background="@drawable/buttons_style"
                 android:fontFamily="@font/letra3"
-                android:text="Registrarme"
+                android:text="Crear evento"
                 android:textSize="20dp"
                 android:textColor="@color/white"
                 android:layout_margin="20dp"

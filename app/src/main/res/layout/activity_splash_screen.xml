@@ -10,6 +10,7 @@
     tools:context=".SplashScreen">
 
     <ImageView
+        android:src="@drawable/logo"
         android:id="@+id/SplashImg"
         android:layout_width="300dp"
         android:layout_height="400dp"

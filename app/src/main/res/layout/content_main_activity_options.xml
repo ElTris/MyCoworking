@@ -16,19 +16,53 @@
         android:layout_height="400dp">
         
         <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/eventos"
+            android:background="@drawable/btnoptions_white"
             android:layout_width="match_parent"
             android:layout_height="133.33dp">
-
+            <TextView
+                android:textSize="30dp"
+                android:text="Crear evento"
+                android:textColor="@color/white"
+                android:fontFamily="@font/letra3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/lugares"
+            android:background="@drawable/btnoptions_white"
             android:layout_width="match_parent"
             android:layout_height="133.33dp">
-
+            <TextView
+                android:textSize="30dp"
+                android:text="Lugares"
+                android:textColor="@color/white"
+                android:fontFamily="@font/letra3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/eventosLista"
+            android:background="@drawable/btnoptions_white"
             android:layout_width="match_parent"
             android:layout_height="133.33dp">
-
+            android:layout_height="133.33dp">
+            <TextView
+                android:textSize="30dp"
+                android:text="Lista de eventos"
+                android:textColor="@color/white"
+                android:fontFamily="@font/letra3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
         
     </LinearLayout>
